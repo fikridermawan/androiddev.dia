@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment"
+
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/fotoprofil" />
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/softgray"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Pengalaman"
+                    android:textSize="@dimen/font_size_large"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgprofile1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/p1"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/tx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Posisi, Nama Perusahaan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Jenis Pekerjaan, Tanggal Mulai - Tanggal Akhir"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+                <ImageView
+                    android:id="@+id/imgprofile2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tx3"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/tx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx3"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Posisi, Nama Perusahaan"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx4"
+                    android:layout_marginLeft="60dp"
+                    android:text="Jenis Pekerjaan, Tanggal Mulai - Tanggal Akhir"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tx5"
+                    android:layout_marginLeft="60dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/softgray"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pdp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Pendidikan"
+                    android:textSize="@dimen/font_size_large"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/pdimgprofile1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/pdp1"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/pdtx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pdp1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Nama Universitas"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pdtx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pdtx1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Jurusan, Tanggal Mulai - Tanggal Akhir"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pdtx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pdtx2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+                <ImageView
+                    android:id="@+id/pdimgprofile2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/pdtx3"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/pdtx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pdtx3"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama Universitas"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pdtx5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pdtx4"
+                    android:layout_marginLeft="60dp"
+                    android:text="Jurusan, Tanggal Mulai - Tanggal Akhir"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pdtx6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pdtx5"
+                    android:layout_marginLeft="60dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/softgray"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/sfp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Sertifikat"
+                    android:textSize="@dimen/font_size_large"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/sfimgprofile1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/sfp1"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/sftx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sfp1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Nama Sertifikat"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sftx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sftx1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Nama Penerbit, Tanggal Sertifikat"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sftx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sftx2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+                <ImageView
+                    android:id="@+id/sfimgprofile2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/sftx3"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/sftx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sftx3"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nama Sertifikat"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sftx5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sftx4"
+                    android:layout_marginLeft="60dp"
+                    android:text="Nama Penerbit, Tanggal Sertifikat"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sftx6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sftx5"
+                    android:layout_marginLeft="60dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl3"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/softgray"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/skp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Skill"
+                    android:textSize="@dimen/font_size_large"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/skimgprofile1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/skp1"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/sktx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skp1"
+                    android:layout_marginLeft="60dp"
+                    android:text="Skill"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/sktx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sktx1"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+                <ImageView
+                    android:id="@+id/skimgprofile2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/sktx3"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/sktx4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sktx3"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Skill"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/sktx6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sktx4"
+                    android:layout_marginLeft="60dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+<!--    <ImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:src="@drawable/fotoprofil" />-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl1"-->
+<!--        android:layout_below="@id/logo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/softgray"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_margin="5dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/p1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:text="Pengalaman"-->
+<!--            android:textSize="@dimen/font_size_large"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgprofile1"-->
+<!--            android:layout_below="@id/p1"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/logo"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tx1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/p1"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Posisi, Nama Perusahaan"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx1"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Jenis Pekerjaan, Tanggal Mulai - Tanggal Akhir"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx2"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:id="@+id/imgprofile2"-->
+<!--            android:layout_below="@id/tx3"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/logo"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_below="@id/tx3"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Posisi, Nama Perusahaan"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx4"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Jenis Pekerjaan, Tanggal Mulai - Tanggal Akhir"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx5"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>-->
+
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl2"-->
+<!--        android:layout_below="@id/rl1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/softgray"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_margin="5dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/penp1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:text="Pengalaman"-->
+<!--            android:textSize="@dimen/font_size_large"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgprofile1"-->
+<!--            android:layout_below="@id/p1"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/logo"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tx1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/p1"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Posisi, Nama Perusahaan"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx1"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Jenis Pekerjaan, Tanggal Mulai - Tanggal Akhir"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx2"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:id="@+id/imgprofile2"-->
+<!--            android:layout_below="@id/tx3"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/logo"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_below="@id/tx3"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Posisi, Nama Perusahaan"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx4"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Jenis Pekerjaan, Tanggal Mulai - Tanggal Akhir"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tx6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tx5"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
