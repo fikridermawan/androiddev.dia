@@ -1,11 +1,11 @@
-package com.example.projectexam.adapter
+package com.example.projectexam.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.projectexam.databinding.ItemAppliBinding
-import com.example.projectexam.model.AppliModel
+import com.example.projectexam.ui.model.AppliModel
 
 class AppliAdapter (private var appliList: ArrayList<AppliModel>): RecyclerView.Adapter<AppliAdapter.ViewHolder>(){
     inner class ViewHolder(val binding: ItemAppliBinding): RecyclerView.ViewHolder(binding.root){

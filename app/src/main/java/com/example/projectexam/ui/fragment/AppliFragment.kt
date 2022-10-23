@@ -1,4 +1,4 @@
-package com.example.projectexam.Fragment
+package com.example.projectexam.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.projectexam.R
-import com.example.projectexam.adapter.AppliAdapter
+import com.example.projectexam.ui.adapter.AppliAdapter
 import com.example.projectexam.databinding.FragmentAppliBinding
-import com.example.projectexam.model.AppliModel
+import com.example.projectexam.ui.model.AppliModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

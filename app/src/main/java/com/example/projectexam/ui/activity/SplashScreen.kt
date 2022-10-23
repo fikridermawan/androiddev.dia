@@ -1,4 +1,4 @@
-package com.example.projectexam.Activity
+package com.example.projectexam.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

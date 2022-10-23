@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.LoginScreen"
+    tools:context=".ui.activity.LoginScreen"
     android:id="@+id/activity_home"
     android:padding="30dp"
     android:background="@color/blue_primary">

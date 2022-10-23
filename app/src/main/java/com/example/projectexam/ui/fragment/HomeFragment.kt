@@ -1,13 +1,13 @@
-package com.example.projectexam.Fragment
+package com.example.projectexam.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.projectexam.R
+import android.widget.Toast
 import com.example.projectexam.databinding.FragmentHomeBinding
-import com.example.projectexam.databinding.FragmentNewsBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,12 +16,12 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [NewsFragment.newInstance] factory method to
+ * Use the [HomeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class NewsFragment : Fragment() {
+class HomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentNewsBinding
+    private lateinit var binding: FragmentHomeBinding
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -31,6 +31,19 @@ class NewsFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+
+            binding.btnnews.setOnClickListener {
+                Toast.makeText(this@HomeFragment, "News!", Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(this@HomeFragment, NewsFragment::class.java)
+                startActivity(intent)
+            }
+            binding.btnjobsu.setOnClickListener {
+                Toast.makeText(this@HomeFragment, "News!", Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(this@HomeFragment, AppliFragment::class.java)
+                startActivity(intent)
+            }
         }
     }
 
@@ -39,7 +52,7 @@ class NewsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentNewsBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -51,12 +64,12 @@ class NewsFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment NewsFragment.
+         * @return A new instance of fragment HomeFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            NewsFragment().apply {
+            HomeFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

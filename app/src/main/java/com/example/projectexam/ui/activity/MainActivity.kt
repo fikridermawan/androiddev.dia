@@ -1,13 +1,12 @@
-package com.example.projectexam.Activity
+package com.example.projectexam.ui.activity
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.projectexam.Fragment.AppliFragment
-import com.example.projectexam.Fragment.HomeFragment
-import com.example.projectexam.Fragment.NewsFragment
-import com.example.projectexam.Fragment.ProfileFragment
+import com.example.projectexam.ui.fragment.AppliFragment
+import com.example.projectexam.ui.fragment.HomeFragment
+import com.example.projectexam.ui.fragment.NewsFragment
+import com.example.projectexam.ui.fragment.ProfileFragment
 import com.example.projectexam.R
 import com.example.projectexam.databinding.ActivityMainBinding
 
