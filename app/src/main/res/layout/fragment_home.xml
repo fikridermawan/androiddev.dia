@@ -98,7 +98,7 @@
     <RelativeLayout
         android:id="@+id/hr2"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="390dp"
         android:layout_below="@id/hr1"
         android:padding="10dp"
         android:background="@color/white">
@@ -205,42 +205,43 @@
                 android:text="Nama Perusahaan"
                 android:layout_marginLeft="70dp"/>
         </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/h4"
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/h4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/h3"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@color/softgray"-->
+<!--            android:padding="10dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/h4img1"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:src="@drawable/logo"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/h4tx1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/font_size_large"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Nama Posisi"-->
+<!--                android:layout_marginLeft="70dp"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/h4tx2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/h4tx1"-->
+<!--                android:textSize="@dimen/font_size_large"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Nama Perusahaan"-->
+<!--                android:layout_marginLeft="70dp"/>-->
+<!--        </RelativeLayout>-->
+        <Button
+            android:id="@+id/btnjobsu"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/h3"
-            android:layout_marginTop="10dp"
-            android:background="@color/softgray"
-            android:padding="10dp">
-            <ImageView
-                android:id="@+id/h4img1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/logo"/>
-            <TextView
-                android:id="@+id/h4tx1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/font_size_large"
-                android:textStyle="bold"
-                android:text="Nama Posisi"
-                android:layout_marginLeft="70dp"/>
-            <TextView
-                android:id="@+id/h4tx2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/h4tx1"
-                android:textSize="@dimen/font_size_large"
-                android:textStyle="bold"
-                android:text="Nama Perusahaan"
-                android:layout_marginLeft="70dp"/>
-        </RelativeLayout>
-        <Button
-            android:id="@+id/btnjobsu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/h4"
             android:text="More"
             android:backgroundTint="@color/blue_primary"/>
     </RelativeLayout>

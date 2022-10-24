@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.projectexam.R
 import com.example.projectexam.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -32,18 +33,18 @@ class HomeFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
 
-            binding.btnnews.setOnClickListener {
-                Toast.makeText(this@HomeFragment, "News!", Toast.LENGTH_SHORT).show()
-
-                val intent = Intent(this@HomeFragment, NewsFragment::class.java)
-                startActivity(intent)
-            }
-            binding.btnjobsu.setOnClickListener {
-                Toast.makeText(this@HomeFragment, "News!", Toast.LENGTH_SHORT).show()
-
-                val intent = Intent(this@HomeFragment, AppliFragment::class.java)
-                startActivity(intent)
-            }
+//            binding.btnnews.setOnClickListener {
+//                Toast.makeText(this@HomeFragment, "News!", Toast.LENGTH_SHORT).show()
+//
+//                val intent = Intent(this@HomeFragment, NewsFragment::class.java)
+//                startActivity(intent)
+//            }
+//            binding.btnjobsu.setOnClickListener {
+//                Toast.makeText(this@HomeFragment, "News!", Toast.LENGTH_SHORT).show()
+//
+//                val intent = Intent(this@HomeFragment, AppliFragment::class.java)
+//                startActivity(intent)
+//            }
         }
     }
 
@@ -55,6 +56,15 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
+
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnnews.setOnClickListener {
+            val intent = Intent( context , NewsFragment::class.java)
+//                startActivity(intent)
+        }
     }
 
     companion object {

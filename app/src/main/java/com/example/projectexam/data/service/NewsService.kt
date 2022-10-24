@@ -14,6 +14,6 @@ interface NewsService {
     fun getRandomNews(@Path("number") number: Int): Single<List<NewsResponse>>
 
     //Query
-//    @GET("/animals/rand")
+//    @GET("/v2/everything?domains=wsj.com")
 //    fun getRandomAnimals(@Query("domains") domains: String): Single<List<AnimalResponse>>
 }

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.projectexam.R
 import com.example.projectexam.databinding.FragmentNewsBinding
 import com.example.projectexam.ui.adapter.AppliAdapter
+import com.example.projectexam.ui.adapter.NewsAdapter
 import com.example.projectexam.ui.model.AppliModel
 
 // TODO: Rename parameter arguments, choose names that match
@@ -24,6 +25,7 @@ private const val ARG_PARAM2 = "param2"
 class NewsFragment : Fragment() {
 
     private lateinit var binding: FragmentNewsBinding
+    private lateinit var adapter: NewsAdapter
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null

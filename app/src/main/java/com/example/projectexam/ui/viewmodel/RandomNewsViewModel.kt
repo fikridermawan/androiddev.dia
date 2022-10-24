@@ -7,18 +7,23 @@ import com.example.projectexam.data.repository.NewsRepository
 import com.example.projectexam.data.service.NewsService
 import com.example.projectexam.retrofit.NewsRetrofit
 import com.example.projectexam.ui.model.news.NewsResponse
+import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
+import javax.inject.Inject
 
-class RandomNewsViewModel: ViewModel() {
+@HiltViewModel
+class RandomNewsViewModel @Inject constructor(
+    private val  newsRepository: NewsRepository
+): ViewModel() {
     private var randomNewsLiveData = MutableLiveData<List<NewsResponse>>()
     private val compositeDisposable = CompositeDisposable()
 
-    private var newsService: NewsService = NewsRetrofit.newsService
-    private var newsRemoteDataSource: NewsRemoteDataSource = NewsRemoteDataSource(newsService)
-    private var newsRepository: NewsRepository = NewsRepository(newsRemoteDataSource)
+//    private var newsService: NewsService = NewsRetrofit.newsService
+//    private var newsRemoteDataSource: NewsRemoteDataSource = NewsRemoteDataSource(newsService)
+//    private var newsRepository: NewsRepository = NewsRepository(newsRemoteDataSource)
 
     fun getRandomNews(number: Int){
         compositeDisposable.add(
