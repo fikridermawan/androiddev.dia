@@ -9,8 +9,10 @@ class NewsRemoteDataSource @Inject constructor(private val newsService: NewsServ
 //    fun getRandomNews(): Single<NewsResponse> {
 //        return newsService.getRandomNew()
 //    }
-    fun getRandomNews(number: Int): Single<List<NewsResponse>> {
-        return newsService.getRandomNews(number)
-    }
+//    fun getRandomNews(number: Int): Single<List<NewsResponse>> {
+//        return newsService.getRandomNews(number)
+//    }
+
+    fun verifyApi(key: String): Single<NewsResponse> = newsService.verifyApi(key)
 
 }

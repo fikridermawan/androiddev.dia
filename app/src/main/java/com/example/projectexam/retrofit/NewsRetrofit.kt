@@ -9,8 +9,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object NewsRetrofit {
-//    const val BASE_URL = "https://newsapi.org/"
-    const val BASE_URL = "https://zoo-animal-api.herokuapp.com/"
+    const val BASE_URL = "https://newsapi.org/"
+//    const val BASE_URL = "https://zoo-animal-api.herokuapp.com/"
 
     val retrofitClient: Retrofit.Builder by lazy {
         val logging = HttpLoggingInterceptor()

@@ -9,7 +9,9 @@ import com.example.projectexam.ui.fragment.NewsFragment
 import com.example.projectexam.ui.fragment.ProfileFragment
 import com.example.projectexam.R
 import com.example.projectexam.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
