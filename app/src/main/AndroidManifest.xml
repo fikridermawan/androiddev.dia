@@ -17,6 +17,13 @@
         android:theme="@style/Theme.ProjectExam"
         tools:targetApi="31">
         <activity
+            android:name=".DetailNewsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".app.ProjectAppActivity"
             android:exported="false">
             <meta-data

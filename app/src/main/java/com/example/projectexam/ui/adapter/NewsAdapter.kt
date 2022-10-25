@@ -2,6 +2,7 @@ package com.example.projectexam.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.projectexam.databinding.ItemNewsBinding
@@ -13,9 +14,14 @@ class NewsAdapter(private var NewsModel: List<Article>):
     var onItemClick: ((Article) -> Unit)? = null
     inner class ViewHolder(var binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root) {
         init {
-            binding.root.setOnClickListener {
-
-            }
+//            val news = NewsModel[adapterPosition]
+//            binding.root.setOnClickListener {
+//                Toast.makeText(
+//                    binding.root.context, "News : ${news.author}",
+//                    Toast.LENGTH_SHORT
+//                ).show()
+//
+//            }
         }
     }
 
