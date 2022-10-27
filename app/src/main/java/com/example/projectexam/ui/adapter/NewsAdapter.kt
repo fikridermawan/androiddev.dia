@@ -9,7 +9,10 @@ import com.example.projectexam.databinding.ItemNewsBinding
 import com.example.projectexam.ui.model.news.Article
 import com.example.projectexam.ui.model.news.NewsResponse
 
-class NewsAdapter(private var NewsModel: List<Article>):
+class NewsAdapter(
+    private var NewsModel: List<Article>,
+    private val newSelected : NewsSelected
+    ):
     RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
     var onItemClick: ((Article) -> Unit)? = null
     inner class ViewHolder(var binding: ItemNewsBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -22,6 +25,9 @@ class NewsAdapter(private var NewsModel: List<Article>):
 //                ).show()
 //
 //            }
+            binding.root.setOnClickListener {
+                newSelected.onNewsSelected(NewsModel[adapterPosition])
+            }
         }
     }
 
@@ -47,5 +53,9 @@ class NewsAdapter(private var NewsModel: List<Article>):
 
     override fun getItemCount(): Int {
         return NewsModel.size
+    }
+
+    interface NewsSelected {
+        fun onNewsSelected(article: Article)
     }
 }
